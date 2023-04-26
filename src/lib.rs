@@ -8,4 +8,10 @@ extern {
 #[wasm_bindgen]
 pub fn greet(name: &str) {
     alert(&format!("Hello, {}!", name));
+
+}
+
+#[wasm_bindgen]
+pub fn add( n:u32 , m:u32) -> u32 {
+    n + m
 }
